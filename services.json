@@ -1,0 +1,12 @@
+{
+  "section_title": "What we do",
+  "section_text": "Six ways HN HUB can help you.",
+  "items": [
+    { "icon": "🌐", "title": "Websites", "text": "Business and portfolio websites that look professional on every phone." },
+    { "icon": "🎁", "title": "Digital gifts", "text": "Personalised gift websites for birthdays, anniversaries and celebrations." },
+    { "icon": "🎨", "title": "Graphic design", "text": "Posters, logos and social media designs that get noticed." },
+    { "icon": "📷", "title": "Photo enhancement", "text": "Clean, sharpen and restore your photos so they look their best." },
+    { "icon": "💻", "title": "Software solutions", "text": "Custom tools that solve real problems for your business." },
+    { "icon": "🚲", "title": "Bicycle hire", "text": "Hourly bicycle hire for students and locals." }
+  ]
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HN HUB | Ideas. Knowledge. Innovation.</title>
+  <meta name="description" content="HN HUB: websites, digital gifts, software, design and bicycle hire. See our latest offers and our work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" id="brandMark">HN</span>
+        <span class="brand-copy"><strong id="brandName">HN HUB</strong><small id="brandTagline"></small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="nav">
+        <a href="#offers" id="navOffers">What's new</a>
+        <a href="#services">Services</a>
+        <a href="#work">Our work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow"><i class="eyebrow-dot"></i><span id="heroEyebrow"></span></p>
+          <h1 id="heroHeadline"></h1>
+          <p class="hero-intro" id="heroIntro"></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact" id="heroBtn1"></a>
+            <a class="text-link" href="#work" id="heroBtn2"></a>
+          </div>
+          <ul class="stats" id="heroStats"></ul>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrap"><img id="heroImage" alt="" width="600" height="600"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offers" id="offers">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow-light"><i class="eyebrow-dot"></i>Adverts</p><h2 id="offersTitle"></h2></div>
+          <p id="offersText"></p>
+        </div>
+        <div class="offer-grid" id="offerGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow"><i class="eyebrow-dot"></i>Services</p><h2 id="servicesTitle"></h2></div>
+          <p id="servicesText"></p>
+        </div>
+        <div class="service-grid" id="serviceGrid"></div>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow"><i class="eyebrow-dot"></i>Portfolio</p><h2 id="workTitle"></h2></div>
+          <p id="workText"></p>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter work by category"></div>
+        <div class="work-grid" id="workGrid"></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-card" id="aboutCard"></div>
+        <div>
+          <p class="eyebrow"><i class="eyebrow-dot"></i><span id="aboutEyebrow"></span></p>
+          <h2 id="aboutHeading"></h2>
+          <p class="about-text" id="aboutText"></p>
+          <ul class="chips" id="aboutSkills"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <h2>Have something in mind? <em>Let's talk.</em></h2>
+            <p>Tell us what you need and we'll reply as soon as we can.</p>
+            <div class="contact-actions">
+              <a class="button button-gold" id="contactWhatsapp" href="#" hidden>Chat on WhatsApp</a>
+              <a class="contact-email" id="contactEmail" href="#" hidden></a>
+            </div>
+          </div>
+          <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden-field"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+            <label>Phone or email<input type="text" name="contact" required></label>
+            <label>Message<textarea name="message" rows="4" required></textarea></label>
+            <button class="button button-gold" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="footerText"></p>
+      <ul class="socials" id="socials"></ul>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Welcome to HN HUB",
+  "headline": "Good ideas deserve a great digital home.",
+  "intro": "HN HUB builds websites, gifts, software and creative work for people and businesses who want to be seen. Browse what's new, see our work, and let's talk about yours.",
+  "button_text": "Start a project",
+  "second_button_text": "See our work",
+  "hero_image": "hero.svg",
+  "stats": [
+    { "number": "6", "label": "Services" },
+    { "number": "4+", "label": "Projects" },
+    { "number": "1", "label": "Big vision" }
+  ]
+}

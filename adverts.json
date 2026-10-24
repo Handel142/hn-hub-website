@@ -1,0 +1,33 @@
+{
+  "section_title": "What's new at HN HUB",
+  "section_text": "Offers, announcements and products. Check back often.",
+  "items": [
+    {
+      "show": true,
+      "badge": "Now open",
+      "title": "Bicycle hire for students",
+      "text": "Affordable hourly bicycle hire. Quick, simple and reliable. Message us on WhatsApp to reserve a bike.",
+      "image": "advert-sample.svg",
+      "button_text": "Reserve on WhatsApp",
+      "button_link": "whatsapp"
+    },
+    {
+      "show": true,
+      "badge": "Offer",
+      "title": "Your business website, ready fast",
+      "text": "A clean, mobile-friendly website for your business, with a gallery for your work. Ask for a free quote today.",
+      "image": "advert-sample.svg",
+      "button_text": "Get a quote",
+      "button_link": "#contact"
+    },
+    {
+      "show": true,
+      "badge": "Gift idea",
+      "title": "Digital gift websites",
+      "text": "Surprise someone special with a personalised website made just for them: photos, messages and memories.",
+      "image": "advert-sample.svg",
+      "button_text": "See an example",
+      "button_link": "https://nellysgift.netlify.app"
+    }
+  ]
+}

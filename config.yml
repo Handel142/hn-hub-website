@@ -1,0 +1,121 @@
+# HN HUB editor settings.
+# CHANGE the "repo" line below to YOUR GitHub username/repository-name.
+backend:
+  name: github
+  repo: Handel142/hn-hub-website
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+site_url: https://handelportfolio.netlify.app
+display_url: https://handelportfolio.netlify.app
+
+collections:
+  - name: "adverts"
+    label: "📢 Adverts"
+    files:
+      - name: "adverts"
+        label: "Your adverts (add, edit, reorder, hide)"
+        file: "adverts.json"
+        fields:
+          - { name: section_title, label: "Section title", widget: string }
+          - { name: section_text, label: "Short line under the title", widget: string, required: false }
+          - name: items
+            label: "Adverts"
+            label_singular: "advert"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: show, label: "Show on website?", widget: boolean, default: true }
+              - { name: badge, label: "Small tag (e.g. Offer, New, Sale)", widget: string, required: false }
+              - { name: title, label: "Title", widget: string }
+              - { name: text, label: "What do you want to say?", widget: text }
+              - { name: image, label: "Picture (optional)", widget: image, required: false }
+              - { name: button_text, label: "Button words (e.g. Order now)", widget: string, required: false }
+              - { name: button_link, label: "Button goes to (type whatsapp, or paste a link, or #contact)", widget: string, required: false, default: "whatsapp" }
+
+  - name: "portfolio"
+    label: "🖼️ Portfolio"
+    files:
+      - name: "portfolio"
+        label: "Your work"
+        file: "portfolio.json"
+        fields:
+          - { name: section_title, label: "Section title", widget: string }
+          - { name: section_text, label: "Short line under the title", widget: string, required: false }
+          - name: items
+            label: "Projects"
+            label_singular: "project"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: "Project name", widget: string }
+              - { name: category, label: "Type (e.g. Websites, Design, Software)", widget: string }
+              - { name: status, label: "Status (e.g. Live, In development)", widget: string, required: false }
+              - { name: text, label: "Short description", widget: text }
+              - { name: image, label: "Picture", widget: image, required: false }
+              - { name: link, label: "Link to the project (optional)", widget: string, required: false }
+
+  - name: "pages"
+    label: "✏️ Page text"
+    files:
+      - name: "home"
+        label: "Top of the page (Home)"
+        file: "home.json"
+        fields:
+          - { name: eyebrow, label: "Small line above headline", widget: string }
+          - { name: headline, label: "Big headline", widget: string }
+          - { name: intro, label: "Intro paragraph", widget: text }
+          - { name: button_text, label: "Main button words", widget: string }
+          - { name: second_button_text, label: "Second link words", widget: string, required: false }
+          - { name: hero_image, label: "Main picture", widget: image, required: false }
+          - name: stats
+            label: "Numbers strip"
+            widget: list
+            summary: "{{fields.number}} {{fields.label}}"
+            fields:
+              - { name: number, label: "Number", widget: string }
+              - { name: label, label: "Label", widget: string }
+      - name: "services"
+        label: "Services"
+        file: "services.json"
+        fields:
+          - { name: section_title, label: "Section title", widget: string }
+          - { name: section_text, label: "Short line under the title", widget: string, required: false }
+          - name: items
+            label: "Services"
+            label_singular: "service"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: icon, label: "Emoji icon (e.g. 🎁)", widget: string }
+              - { name: title, label: "Name", widget: string }
+              - { name: text, label: "Description", widget: text }
+      - name: "about"
+        label: "About the founder"
+        file: "about.json"
+        fields:
+          - { name: eyebrow, label: "Small line above name", widget: string }
+          - { name: heading, label: "Name or heading", widget: string }
+          - { name: text, label: "About text", widget: text }
+          - { name: photo, label: "Your photo (leave empty to show initials)", widget: image, required: false }
+          - { name: monogram, label: "Initials (shown if no photo)", widget: string, required: false }
+          - { name: skills, label: "Skills", widget: list, field: { name: skill, label: "Skill", widget: string } }
+
+  - name: "settings"
+    label: "⚙️ Contact & settings"
+    files:
+      - name: "settings"
+        label: "Business details"
+        file: "settings.json"
+        fields:
+          - { name: brand_name, label: "Business name", widget: string }
+          - { name: tagline, label: "Tagline", widget: string }
+          - { name: whatsapp, label: "WhatsApp number (digits only, with country code, e.g. 2547XXXXXXXX)", widget: string, required: false }
+          - { name: email, label: "Email", widget: string, required: false }
+          - { name: instagram, label: "Instagram link", widget: string, required: false }
+          - { name: tiktok, label: "TikTok link", widget: string, required: false }
+          - { name: facebook, label: "Facebook link", widget: string, required: false }
+          - { name: youtube, label: "YouTube link", widget: string, required: false }
+          - { name: github, label: "GitHub link", widget: string, required: false }
+          - { name: footer_text, label: "Footer line", widget: string, required: false }

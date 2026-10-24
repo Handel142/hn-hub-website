@@ -1,0 +1,10 @@
+{
+  "section_title": "Our work",
+  "section_text": "A few things we've built or are building.",
+  "items": [
+    { "title": "Digital Gift Website", "category": "Websites", "status": "Live", "text": "A personalised celebration website with photos and messages.", "image": "work-sample.svg", "link": "https://nellysgift.netlify.app" },
+    { "title": "RentLink", "category": "Software", "status": "In development", "text": "A property management system for rent collection and tenant communication.", "image": "work-sample.svg", "link": "" },
+    { "title": "Project Genesis", "category": "Software", "status": "Planning", "text": "A privacy-focused social platform.", "image": "work-sample.svg", "link": "" },
+    { "title": "HN HUB Website", "category": "Websites", "status": "Live", "text": "This website, which you can edit without touching code.", "image": "work-sample.svg", "link": "" }
+  ]
+}

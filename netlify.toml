@@ -1,0 +1,4 @@
+# This site needs no build step. These settings override anything set in the Netlify app.
+[build]
+  command = "echo No build needed"
+  publish = "."
